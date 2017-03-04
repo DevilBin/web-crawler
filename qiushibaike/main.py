@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Get context from website and send a mail.
+Get context from website and send a email.
 """
 import core
 import mail
@@ -21,6 +21,6 @@ if __name__ == "__main__":
             result
         )
     except Exception as e:
-        print("[E]: Send email error, {0}.".format(e.message))
+        print("[E]: Send email error, {0}.".format(e))
     else:
         print("[I]: Send a email succeed.")
